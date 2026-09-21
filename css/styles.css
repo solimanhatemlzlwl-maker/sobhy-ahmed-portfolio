@@ -87,3 +87,71 @@
 .achievement-content p{display:block!important;max-width:100%;margin-top:8px!important;}
 .achievement-feature .achievement-content h3{font-size:clamp(22px,2.3vw,30px);}
 @media(max-width:620px){.achievement-content h3{font-size:20px!important;line-height:1.9!important;margin-top:14px!important}.achievement-content p{line-height:2.1!important}.achievement-stat{margin-top:12px!important;gap:10px!important}}
+
+
+/* V7 — premium interaction pass */
+.nav-tools{display:flex;align-items:center;gap:8px;margin-right:auto}.nav-tools .menu-btn{margin:0}.sound-toggle,.theme-toggle{height:38px;border:1px solid rgba(255,255,255,.14);border-radius:12px;background:rgba(255,255,255,.055);color:#fff;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 11px;cursor:pointer;backdrop-filter:blur(10px);transition:.3s;font-family:inherit}.sound-toggle b{font-size:10px}.sound-toggle:hover,.theme-toggle:hover{transform:translateY(-2px);border-color:rgba(84,231,255,.5);background:rgba(84,231,255,.09)}.sound-toggle.off{opacity:.72}.theme-toggle{width:38px;padding:0;font-size:16px}.football-loader{width:112px;height:112px;background:none;box-shadow:none;animation:ballIntro 1.6s cubic-bezier(.2,.9,.2,1) forwards;filter:drop-shadow(0 18px 25px rgba(0,0,0,.32)) drop-shadow(0 0 28px rgba(84,231,255,.28))}.football-loader img{width:100%;height:100%;display:block;animation:ballSpin 2.7s linear infinite}.football-loader:before,.football-loader span,.football-loader i{display:none}@keyframes ballSpin{to{transform:rotate(360deg)}}
+/* Light mode */
+body.light-theme{--ink:#102238;--muted:#536a7a;--line:rgba(16,34,56,.14);--card:rgba(255,255,255,.78);background:radial-gradient(circle at 10% 8%,rgba(62,124,255,.14),transparent 28%),radial-gradient(circle at 90% 30%,rgba(140,99,255,.12),transparent 30%),linear-gradient(135deg,#edf7fb,#eaf2ff 52%,#f7f5ff)}body.light-theme:before{background:linear-gradient(110deg,transparent 30%,rgba(30,90,130,.05) 47%,transparent 62%)}body.light-theme .nav-wrap{background:linear-gradient(to bottom,rgba(239,247,252,.94),transparent)}body.light-theme .nav-links a,body.light-theme .brand{color:#102238}body.light-theme .nav-links a:hover{color:#3e7cff}body.light-theme .sound-toggle,body.light-theme .theme-toggle{color:#102238;background:rgba(255,255,255,.65);border-color:rgba(16,34,56,.12)}body.light-theme .ghost-btn{color:#102238;background:rgba(255,255,255,.55)}body.light-theme .hero-grid{background-image:linear-gradient(rgba(16,34,56,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(16,34,56,.055) 1px,transparent 1px)}body.light-theme .section-head p,body.light-theme .lead,body.light-theme .hero-intro,body.light-theme .hero-meta,body.light-theme .contact-copy{color:#536a7a}body.light-theme .stat-card,body.light-theme .position-info article,body.light-theme .contact-card{background:rgba(255,255,255,.64);border-color:rgba(16,34,56,.12)}body.light-theme .stat-card strong,body.light-theme .contact-card b{color:#102238}body.light-theme .contact-card:hover{background:rgba(84,231,255,.12)}body.light-theme .profile-shell,body.light-theme .output-panel{background:rgba(255,255,255,.58);border-color:rgba(16,34,56,.12)}body.light-theme .detail{background:rgba(255,255,255,.56);border-color:rgba(16,34,56,.1)}body.light-theme .detail b{color:#102238}body.light-theme .fifa-card{box-shadow:0 30px 70px rgba(35,70,100,.22)}body.light-theme footer{background:rgba(255,255,255,.5)}body.light-theme .footer-bottom{color:#61798a}body.light-theme .mobile-menu{background:linear-gradient(135deg,#edf7fb,#eaf2ff)}body.light-theme .mobile-menu a,body.light-theme .mobile-close{color:#102238}
+/* Achievement sequence */
+.creative-achievements .achievement-card{animation:none!important;opacity:0!important;transform:translateY(42px) scale(.97)!important}.creative-achievements .achievement-card.sequence-in{opacity:1!important;transform:translateY(0) scale(1)!important;transition:opacity .75s cubic-bezier(.2,.8,.2,1),transform .75s cubic-bezier(.2,.8,.2,1)}.creative-achievements .achievement-card.sequence-in .achievement-icon{animation:achievementFloat 3.5s ease-in-out infinite}.creative-achievements .achievement-card.sequence-in .achievement-line{width:100%}
+/* Position avatar */
+.striker{background:transparent;box-shadow:none;animation:none;display:flex;flex-direction:column;gap:7px;width:94px;height:112px}.striker-avatar{position:relative;width:86px;height:86px;border-radius:50%;padding:4px;background:linear-gradient(145deg,#fff,var(--cyan),var(--violet));box-shadow:0 0 0 8px rgba(84,231,255,.08),0 0 45px rgba(84,231,255,.5);animation:strikerFloat 2.8s ease-in-out infinite}.striker-avatar:after{content:"";position:absolute;inset:4px;border-radius:50%;border:1px solid rgba(255,255,255,.6);pointer-events:none}.striker-avatar img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 18%;border-radius:50%;border:3px solid #071827}.striker-avatar span{position:absolute;right:-8px;bottom:1px;display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:linear-gradient(145deg,var(--blue),var(--violet));border:2px solid #fff;color:#fff;font:700 18px Teko;z-index:2}.striker>b{display:block;padding:3px 11px;border-radius:999px;background:rgba(4,16,28,.8);border:1px solid rgba(84,231,255,.35);font-size:11px;color:var(--cyan)}@keyframes strikerFloat{50%{transform:translateY(-7px) scale(1.03)}}
+/* Contact upgrade */
+.contact-actions{position:relative;z-index:2}.contact-card{position:relative;min-height:112px;overflow:hidden}.contact-card:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.08) 50%,transparent 80%);transform:translateX(-120%);transition:transform .8s}.contact-card:hover:before{transform:translateX(120%)}.contact-card div{min-width:0}.contact-sub{display:block;color:#7f98a8;font-size:9px;margin-top:4px}.contact-note-grid{display:flex;justify-content:center;gap:24px;flex-wrap:wrap}.call-note{margin-top:18px}.developer-link{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}.developer-link strong{transition:.35s}.developer-link:hover strong{transform:translateY(-5px);text-shadow:0 0 30px rgba(84,231,255,.45)}.developer-link small{color:var(--muted);font-size:9px;margin-top:2px;opacity:.8}.mobile-tools{display:flex;gap:10px;position:absolute;top:25px;right:25px}.mobile-tools .sound-toggle,.mobile-tools .theme-toggle{display:inline-flex}.mobile-menu .sound-toggle{color:#fff}.mobile-menu .theme-toggle{color:#fff}@media(max-width:950px){.nav-tools{margin-left:auto;margin-right:0}.nav-tools .sound-toggle b{display:none}.nav-tools .sound-toggle{width:38px;padding:0}.contact-note-grid{gap:4px 18px}}@media(max-width:620px){.nav-tools{gap:5px}.nav-tools .sound-toggle,.nav-tools .theme-toggle{height:34px;width:34px}.striker{width:82px;height:100px}.striker-avatar{width:74px;height:74px}.striker-avatar span{width:28px;height:28px;font-size:16px}.pitch-caption{max-width:58%}.contact-card{min-height:100px;padding:14px}.contact-sub{font-size:8px}.developer{margin:65px 0 40px}}
+
+/* V8 — motion, loader counter, premium ball and refined day mode */
+.loader{isolation:isolate}
+.loader:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(84,231,255,.10),transparent 22%),linear-gradient(120deg,transparent 35%,rgba(255,255,255,.035) 50%,transparent 65%);animation:loaderSweep 4s linear infinite;pointer-events:none}
+.football-loader{width:156px;height:156px;background:none;border-radius:50%;box-shadow:none;filter:drop-shadow(0 24px 28px rgba(0,0,0,.38)) drop-shadow(0 0 34px rgba(84,231,255,.32));position:relative;z-index:2}
+.football-loader img{width:100%;height:100%;display:block;animation:ballSpin 3.2s linear infinite,ballBreathe 2.1s ease-in-out infinite}
+.football-loader:before{content:"";position:absolute;inset:-13px;border-radius:50%;border:1px solid rgba(84,231,255,.25);box-shadow:0 0 0 9px rgba(84,231,255,.035),0 0 45px rgba(84,231,255,.2);animation:ballRing 2.4s ease-in-out infinite;pointer-events:none}
+.loader-copy{position:relative;z-index:3;margin-top:24px}
+.loader-copy b{font-size:40px;text-shadow:0 0 22px rgba(84,231,255,.35)}
+.loader-progress-meta{position:relative;z-index:3;width:min(420px,68vw);display:flex;align-items:center;justify-content:space-between;margin-top:25px;color:#9bb6c5;font-size:10px;letter-spacing:.04em}
+.loader-progress-meta b{font:700 24px Teko;color:var(--cyan);min-width:45px;text-align:left;text-shadow:0 0 18px rgba(84,231,255,.45)}
+.loader-line{position:relative;z-index:3;width:min(420px,68vw);height:4px;border-radius:999px;margin-top:8px;background:rgba(255,255,255,.12);box-shadow:inset 0 1px 3px rgba(0,0,0,.25);overflow:visible}
+.loader-line:before{content:"";position:absolute;inset:-5px 0;border-radius:999px;background:linear-gradient(90deg,transparent,rgba(84,231,255,.15),transparent);filter:blur(5px)}
+.loader-line span{position:relative;border-radius:999px;box-shadow:0 0 18px rgba(84,231,255,.65)}
+@keyframes loaderSweep{to{transform:translateX(100%)}}@keyframes ballBreathe{50%{transform:scale(1.045)}}@keyframes ballRing{50%{transform:scale(1.07);opacity:.55}}@keyframes ballSpin{to{transform:rotate(360deg)}}
+
+/* Re-play reveals whenever the user scrolls away and comes back. */
+.section-pad>.container{transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.section-pad>.container:hover{transform:translateY(-2px)}
+.reveal{will-change:opacity,transform,filter}
+.reveal.revealed{animation:sectionReveal .85s cubic-bezier(.2,.8,.2,1) both}
+@keyframes sectionReveal{0%{opacity:0;transform:translateY(48px) scale(.985);filter:blur(9px)}65%{opacity:1;transform:translateY(-4px) scale(1);filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+.achievement-card.sequence-in{animation:achievementSequence .8s cubic-bezier(.2,.8,.2,1) both!important}
+@keyframes achievementSequence{0%{opacity:0;transform:translateY(55px) rotateX(12deg) scale(.94)}70%{opacity:1;transform:translateY(-7px) rotateX(0) scale(1.015)}100%{opacity:1;transform:none}}
+
+/* More animated transitions for section boundaries */
+.section-pad:before{content:"";position:absolute;left:8%;right:8%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),var(--violet),transparent);opacity:.12;transform:scaleX(.35);transition:transform 1s ease,opacity 1s ease}
+.section-pad:has(.reveal.revealed):before{transform:scaleX(1);opacity:.35}
+
+/* More polished day mode */
+body.light-theme{--bg:#eef7fb;--bg2:#dceeff;--ink:#0d2134;--muted:#4d6577;--line:rgba(13,33,52,.13);--card:rgba(255,255,255,.76);background:radial-gradient(circle at 15% 10%,rgba(44,139,255,.18),transparent 28%),radial-gradient(circle at 85% 18%,rgba(127,89,255,.15),transparent 30%),radial-gradient(circle at 50% 75%,rgba(54,215,183,.08),transparent 28%),linear-gradient(135deg,#f8fcff,#e8f4ff 52%,#f4f0ff)}
+body.light-theme:after{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(13,33,52,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(13,33,52,.035) 1px,transparent 1px);background-size:46px 46px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.65),transparent 80%);z-index:-1}
+body.light-theme .nav-wrap{background:linear-gradient(to bottom,rgba(248,252,255,.95),rgba(248,252,255,.5),transparent);border-bottom:1px solid rgba(13,33,52,.05)}
+body.light-theme .nav-links a{color:#486174}body.light-theme .nav-links a:hover{color:#1769d5}
+body.light-theme .hero{background:radial-gradient(circle at 75% 40%,rgba(62,124,255,.11),transparent 28%)}
+body.light-theme .hero-title span:last-child{background:linear-gradient(90deg,#0d2134,#1769d5,#0d2134);-webkit-background-clip:text;background-clip:text}
+body.light-theme .hero-photo-frame,.light-theme .player-card,.light-theme .profile-shell,.light-theme .stat-card,.light-theme .output-panel,.light-theme .achievement-card,.light-theme .position-info article,.light-theme .contact-card{box-shadow:0 24px 65px rgba(35,70,100,.14)}
+body.light-theme .hero-photo-frame{border-color:rgba(23,105,213,.16)}
+body.light-theme .section-head h2 strong{color:#1769d5}
+body.light-theme .section-kicker{color:#1769d5}
+body.light-theme .stat-card strong,.light-theme .achievement-stat strong{color:#0d2134;text-shadow:none}
+body.light-theme .achievement-card{background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(234,246,255,.72));border-color:rgba(23,105,213,.14)}
+body.light-theme .achievement-icon{background:linear-gradient(145deg,#fff,#e5f3ff);box-shadow:0 12px 30px rgba(23,105,213,.13)}
+body.light-theme .achievement-content p b{color:#0d2134}
+body.light-theme .pitch-section{background:linear-gradient(180deg,rgba(255,255,255,.08),transparent)}
+body.light-theme .pitch{box-shadow:0 28px 80px rgba(35,70,100,.18)}
+body.light-theme .gallery-item{box-shadow:0 22px 60px rgba(35,70,100,.15)}
+body.light-theme .contact-card{background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(232,245,255,.75));border-color:rgba(23,105,213,.14)}
+body.light-theme .contact-card b{color:#0d2134}
+body.light-theme .developer-link strong{background:linear-gradient(90deg,#0d2134,#1769d5,#0d2134);-webkit-background-clip:text;background-clip:text}
+body.light-theme .footer-main h3{color:#0d2134}
+body.light-theme .theme-toggle{background:linear-gradient(145deg,#fff,#e5f3ff);box-shadow:0 8px 22px rgba(23,105,213,.12)}
+body.light-theme .mobile-menu{background:linear-gradient(135deg,#f8fcff,#e8f4ff 55%,#f4f0ff)}
+body.light-theme .mobile-menu a,body.light-theme .mobile-close{color:#0d2134}
+
+@media(max-width:620px){.football-loader{width:128px;height:128px}.loader-progress-meta,.loader-line{width:min(360px,78vw)}.loader-copy strong{font-size:25px}.section-pad:before{left:5%;right:5%}}

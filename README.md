@@ -3,8 +3,8 @@
 One-page Arabic football portfolio for Sobhy Ahmed El Naggar.
 
 ## Included
-- 25 matches / 19 goals / 0.76 goals per match
-- Goal output panel: 19 goals in 25 matches
+- 23 matches / 33 goals / 9 assists / 42 goal contributions / 1.43 goals per match
+- Goal output panel: 33 goals + 9 assists = 42 goal contributions in 23 matches
 - Animated attacking-tool percentages with count-up and progress bars
 - FIFA-inspired interactive player card
 - Animated profile panel
